@@ -11,15 +11,22 @@
 </body>
 <script>
 
-    
-      let choice = Math.random() * 3; 
-      if (choice <=1) {
-        choice = "Rock";
-      } else if (choice <= 2) {
-        choice = "Scissors"
+   function getComputerChoice (Choice = Math.random() * 3) {
+      if (Choice <=1) {
+        return "rock"
+      } else if (Choice <= 2) {
+        return "Scissors"
       } else {
-        choice = "paper";
+        return "paper";
       }
+   }
+
+   function playRound (playerSelection, computerSelection) {
+
+   }
+   const playerSelection = "rock";
+   const computerSelection = getComputerChoice();
+   console.log(computerSelection);
     
 </script>
 </html>
